@@ -1,12 +1,12 @@
 {
   "name": "md-icons-codepoints",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "material design icons codepoints as a JSON object",
   "main": "codepoints.json",
   "scripts": {
-	"prebuild": "curl https://raw.githubusercontent.com/google/material-design-icons/master/iconfont/codepoints > codepoints.txt",
+    "prebuild": "curl https://raw.githubusercontent.com/google/material-design-icons/master/iconfont/codepoints > codepoints.txt",
     "build": "node convert.js",
-	"preversion": "npm run build",
+    "preversion": "npm run build",
     "version": "git add . --all",
     "postversion": "git push --follow-tags"
   },
