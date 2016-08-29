@@ -1,0 +1,30 @@
+{
+  "name": "md-icons-codepoints",
+  "version": "1.0.0",
+  "description": "material design icons codepoints as a JSON object",
+  "main": "codepoints.json",
+  "scripts": {
+	"prebuild": "curl https://raw.githubusercontent.com/google/material-design-icons/master/iconfont/codepoints > codepoints.txt",
+    "build": "node convert.js",
+	"preversion": "npm run build",
+    "version": "git add . --all",
+    "postversion": "git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattecapu/md-icons-codepoints.git"
+  },
+  "keywords": [
+    "material-design",
+    "icons",
+    "unicode",
+    "codepoints",
+    "json"
+  ],
+  "author": "Matteo Capucci <mattecapu@live.it>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattecapu/md-icons-codepoints/issues"
+  },
+  "homepage": "https://github.com/mattecapu/md-icons-codepoints#readme"
+}
