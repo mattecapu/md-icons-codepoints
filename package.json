@@ -1,6 +1,6 @@
 {
   "name": "md-icons-codepoints",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "material design icons codepoints as a JSON object",
   "main": "codepoints.json",
   "scripts": {
