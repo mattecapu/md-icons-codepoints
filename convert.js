@@ -13,6 +13,6 @@ codepoints.split("\n")
 
 fs.writeFileSync(
 	'codepoints.json',
-	JSON.stringify(pjos),
-	'utf-8'
+	 JSON.stringify(pjos),
+	'utf8'
 );
